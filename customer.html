@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+    .left{
+        width: 40%;
+        height: 100vh;
+        background-color: #040237;
+        text-align: center;
+    }
+    .globe{
+        margin-top: 120px;
+        margin-left: 80px;
+    }
+    .unbabel-logo{
+        position: absolute;
+        top: 80vh;
+        left: 18vw;
+    }
+    .right{
+        width: 60%;
+        height: 100vh;
+        background-color: white;
+    }
+</style>
+<style>
+    .right h1{
+        font-size: 40px;
+        font-family: inherit;
+        font-weight: 600;
+        color: rgb(4, 2, 55);
+        margin-left: 370px;
+        margin-top: 25vh;
+    }
+    .containe{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+    form{
+        width: 420px;
+        height: 400px;
+        /* border: 1px solid black; */
+        margin-left: 260px;
+    }
+    input{
+        width: 415px;
+        height: 40px;
+        border: 1px solid gray;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: inherit;
+        font-weight: 400;
+    }
+    form a{
+        font-size: 18px;
+        font-family: inherit;
+        font-weight: 600;
+        color:  rgb(56, 67, 208);
+        text-decoration-line: none;
+        margin-left: 240px;
+    }
+    form button{
+        width: 420px;
+        height: 40px;
+        margin-top: 30px;
+        background-color: #E7E7E8;
+        border: none;
+        font-size: 16px;
+        font-family: inherit;
+        font-weight: 400;
+    }
+    .line{
+        width: 160px;
+        height: 3px;
+        background-color: #E7E7E8;
+    }
+    form p{
+        font-size: 18px;
+        font-family: inherit;
+        font-weight: 600;
+        color:  rgb(56, 67, 208);
+        margin-left: 150px;
+    }
+</style>
+<body>
+    <div class="containe">
+        <div class="left">
+            <img class="globe" src="./aside-image1.svg" alt="">
+            <img class="unbabel-logo" src="./unbabel-logo.svg" alt="">
+        </div>
+        <div class="right">
+            <h1>Welcome!</h1>
+            <form action="">
+                <input type="email" placeholder="    Username or email"><br>
+                <input type="password" placeholder="    Password" >
+                <a href="">Forget your password?</a>    
+                <button>Log in</button>
+                <div style="display: flex; gap: 40px; margin-top: 50px;">
+                    <div class="line"></div>
+                    <b>or</b>
+                    <div class="line"></div>
+                </div>
+                <p>Login with SSO</p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
